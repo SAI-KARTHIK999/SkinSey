@@ -405,7 +405,7 @@ export default function AnalyzeSkinPage() {
         </div>
       </div>
       {/* Floating Chansey AI Button */}
-      <ChanseyFAB />
+      {/* <ChanseyFAB /> */}
     </div>
   )
 }

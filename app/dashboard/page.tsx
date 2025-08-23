@@ -104,7 +104,7 @@ export default function DashboardPage() {
                 className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full py-3 font-semibold shadow-lg"
                 asChild
               >
-                <Link href="/full-dashboard">View Full Dashboard</Link>
+                <Link href="/dashboard">View Full Dashboard</Link>
               </Button>
             </CardContent>
           </Card>
@@ -157,7 +157,7 @@ export default function DashboardPage() {
                 className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full py-3 font-semibold shadow-lg"
                 asChild
               >
-                <Link href="/chatbot">
+                <Link href="/dashboard">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Start Chat
                 </Link>
@@ -217,7 +217,7 @@ export default function DashboardPage() {
         </div>
       </div>
       {/* Floating Chansey AI Button */}
-      <ChanseyFAB />
+      {/* <ChanseyFAB /> */}
     </div>
   )
 }

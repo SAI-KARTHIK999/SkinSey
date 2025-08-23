@@ -416,7 +416,7 @@ export default function ChatbotPage() {
       
 
       {/* Floating Chansey AI Button */}
-      <ChanseyFAB />
+      {/* <ChanseyFAB /> */}
       <Toaster />
     </div>
   )

@@ -790,7 +790,7 @@ export default function BookAppointmentPage() {
         </div>
       </div>
       {/* Floating Chansey AI Button */}
-      <ChanseyFAB />
+      {/* <ChanseyFAB /> */}
     </div>
   )
 }

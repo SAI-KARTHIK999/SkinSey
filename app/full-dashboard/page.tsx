@@ -1370,7 +1370,7 @@ export default function FullDashboardPage() {
       </div>
 
       {/* Floating Chansey AI Button */}
-      <ChanseyFAB />
+      {/* <ChanseyFAB /> */}
     </div>
   )
 }
