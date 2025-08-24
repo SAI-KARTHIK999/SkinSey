@@ -575,38 +575,40 @@ export default function FullDashboardPage() {
 
         {/* Main Dashboard Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-  <TabsList className="flex flex-wrap justify-between bg-white border border-pink-100">
+  <TabsList className="flex overflow-x-auto no-scrollbar bg-white border border-pink-100">
     <TabsTrigger
       value="overview"
-      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+      className="flex-shrink-0 px-4 py-2 text-center data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
     >
       Overview
     </TabsTrigger>
     <TabsTrigger
       value="routine"
-      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+      className="flex-shrink-0 px-4 py-2 text-center data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
     >
       Routine
     </TabsTrigger>
     <TabsTrigger
       value="reminders"
-      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+      className="flex-shrink-0 px-4 py-2 text-center data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
     >
       Reminders
     </TabsTrigger>
     <TabsTrigger
       value="weather"
-      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+      className="flex-shrink-0 px-4 py-2 text-center data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
     >
       Weather
     </TabsTrigger>
     <TabsTrigger
       value="community"
-      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+      className="flex-shrink-0 px-4 py-2 text-center data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
     >
       Community
     </TabsTrigger>
   </TabsList>
+
+
 
 
 
