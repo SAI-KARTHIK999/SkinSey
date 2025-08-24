@@ -1,10 +1,7 @@
 // app/api/analyze-skin/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { Groq } from "groq-sdk"; 
-import { writeFile, unlink, mkdir } from "fs/promises";
-import path from "path";
+import { Groq } from "groq-sdk";
 
-const UPLOAD_FOLDER = path.join(process.cwd(), "uploads");
 const ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg", "webp"];
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
@@ -24,7 +21,6 @@ export async function POST(req: NextRequest) {
     }
 
     const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
-
     const formData = await req.formData();
     const file = formData.get("image") as File | null;
 
@@ -46,15 +42,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Ensure uploads folder exists
-    await mkdir(UPLOAD_FOLDER, { recursive: true });
-
-    // Save uploaded file temporarily
+    // Convert file to Base64 in-memory
     const bytes = Buffer.from(await file.arrayBuffer());
-    const filepath = path.join(UPLOAD_FOLDER, file.name);
-    await writeFile(filepath, bytes);
-
-    // Convert to Base64
     const image_b64 = bytes.toString("base64");
 
     // AI prompt
@@ -90,9 +79,7 @@ IMPORTANT: If you cannot confidently analyze the image, respond with:
             { type: "text", text: prompt },
             {
               type: "image_url",
-              image_url: {
-                url: `data:image/jpeg;base64,${image_b64}`,
-              },
+              image_url: { url: `data:image/jpeg;base64,${image_b64}` },
             },
           ],
         },
@@ -101,9 +88,6 @@ IMPORTANT: If you cannot confidently analyze the image, respond with:
     });
 
     const ai_message = response.choices[0]?.message?.content || "";
-
-    // Cleanup temp file
-    await unlink(filepath).catch(() => {});
 
     // Handle error format
     if (ai_message.includes("===ERROR===")) {
