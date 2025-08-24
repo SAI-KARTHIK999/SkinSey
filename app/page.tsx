@@ -70,21 +70,7 @@ export default function LandingPage() {
               >
                 <Link href="/signup">Start Your Skin Journey</Link>
               </Button>
-              <div className="flex items-center justify-center gap-6 mt-8 text-sm text-gray-500">
-                <div className="flex items-center gap-1">
-                  <Shield className="w-4 h-4 text-pink-400" />
-                  HIPAA Compliant
-                </div>
-                <div className="flex items-center gap-1">
-                  <Users className="w-4 h-4 text-pink-400" />
-                  50k+ Happy Users
-                </div>
-                <div className="flex items-center gap-1">
-                <HeartIcon className="w-4 h-4 text-pink-400" />
-                  
-                  Dermatologist Approved
-                </div>
-              </div>
+
             </CardContent>
           </Card>
         </div>
@@ -163,84 +149,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-3xl p-12 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="flex justify-center mb-4">
-              <ChanseyMascot size="lg" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Trusted by Healthcare Professionals</h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-pink-600 mb-2">98%</div>
-                <div className="text-gray-600">Accuracy Rate</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-pink-600 mb-2">24/7</div>
-                <div className="text-gray-600">Chansey AI Available</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-pink-600 mb-2">500+</div>
-                <div className="text-gray-600">Partner Dermatologists</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16">
-        <Card className="border-pink-200 bg-gradient-to-r from-pink-100 to-rose-100 max-w-3xl mx-auto">
-          <CardContent className="text-center p-12">
-            <div className="flex justify-center mb-4">
-              <ChanseyMascot size="lg" />
-            </div>
-            <h3 className="text-3xl font-bold text-gray-800 mb-4">Ready to Transform Your Skin Health?</h3>
-            <p className="text-gray-600 mb-8 text-lg">
-              Join thousands of users who have already started their journey to healthier, more beautiful skin with
-              Chansey AI.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full px-8 py-3 text-lg font-semibold shadow-lg"
-                asChild
-              >
-                <Link href="/signup">Get Started Free</Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-pink-300 text-pink-700 hover:bg-pink-50 rounded-full px-8 py-3 text-lg font-semibold bg-transparent"
-              >
-                Learn More
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Footer */}
-      <footer className="container mx-auto px-4 py-8 border-t border-pink-100">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
-            <ChanseyMascot size="sm" />
-            <span className="text-gray-600">© 2024 Skinsey. All rights reserved.</span>
-          </div>
-          <div className="flex gap-6 text-sm text-gray-500">
-            <Link href="#" className="hover:text-pink-600 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="hover:text-pink-600 transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="#" className="hover:text-pink-600 transition-colors">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </footer>
+     
     </div>
   )
 }

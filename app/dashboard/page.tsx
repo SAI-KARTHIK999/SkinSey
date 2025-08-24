@@ -178,8 +178,8 @@ export default function DashboardPage() {
             </CardHeader>
             <CardContent className="text-center">
               <div className="mb-4 p-3 bg-pink-50 rounded-lg">
-                <p className="text-sm text-gray-600">Next: Dr. Sarah Johnson</p>
-                <p className="text-xs text-gray-500">Tomorrow at 2:30 PM</p>
+              <p className="text-sm text-gray-600">“Healthy skin is a reflection of overall wellness.”</p>
+              <p className="text-xs text-gray-500">— Dermatology Wisdom</p>
               </div>
               <Button
                 className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full py-3 font-semibold shadow-lg"
@@ -193,28 +193,7 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
         </div>
-
-        {/* Quick Stats */}
-        <div className="mt-12 max-w-4xl mx-auto">
-          <Card className="border-pink-100 bg-gradient-to-r from-pink-50 to-rose-50">
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-2xl font-bold text-pink-600 mb-1">78</div>
-                  <div className="text-sm text-gray-600">Skin Health Score</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-pink-600 mb-1">15</div>
-                  <div className="text-sm text-gray-600">Days Streak</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-pink-600 mb-1">3</div>
-                  <div className="text-sm text-gray-600">Upcoming Appointments</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        
       </div>
       {/* Floating Chansey AI Button */}
       {/* <ChanseyFAB /> */}
