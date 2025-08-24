@@ -575,23 +575,40 @@ export default function FullDashboardPage() {
 
         {/* Main Dashboard Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-          <TabsList className="grid w-full grid-cols-5 bg-white border border-pink-100">
-            <TabsTrigger value="overview" className="data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700">
-              Overview
-            </TabsTrigger>
-            <TabsTrigger value="routine" className="data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700">
-              Routine
-            </TabsTrigger>
-            <TabsTrigger value="reminders" className="data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700">
-              Reminders
-            </TabsTrigger>
-            <TabsTrigger value="weather" className="data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700">
-              Weather
-            </TabsTrigger>
-            <TabsTrigger value="community" className="data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700">
-              Community
-            </TabsTrigger>
-          </TabsList>
+  <TabsList className="flex flex-wrap justify-between bg-white border border-pink-100">
+    <TabsTrigger
+      value="overview"
+      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+    >
+      Overview
+    </TabsTrigger>
+    <TabsTrigger
+      value="routine"
+      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+    >
+      Routine
+    </TabsTrigger>
+    <TabsTrigger
+      value="reminders"
+      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+    >
+      Reminders
+    </TabsTrigger>
+    <TabsTrigger
+      value="weather"
+      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+    >
+      Weather
+    </TabsTrigger>
+    <TabsTrigger
+      value="community"
+      className="flex-1 text-center py-2 data-[state=active]:bg-pink-100 data-[state=active]:text-pink-700"
+    >
+      Community
+    </TabsTrigger>
+  </TabsList>
+
+
 
           {/* Overview Tab */}
           <TabsContent value="overview" className="space-y-6">
