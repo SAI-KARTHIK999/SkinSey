@@ -150,6 +150,26 @@ export default function LandingPage() {
       </section>
 
      
+      {/* Footer */}
+      <footer className="container mx-auto px-4 py-8 border-t border-pink-100">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-2">
+            <ChanseyMascot size="sm" />
+            <span className="text-gray-600">© 2024 Skinsey. All rights reserved.</span>
+          </div>
+          <div className="flex gap-6 text-sm text-gray-500">
+            <Link href="#" className="hover:text-pink-600 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="hover:text-pink-600 transition-colors">
+              Terms of Service
+            </Link>
+            <Link href="#" className="hover:text-pink-600 transition-colors">
+              Contact
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
