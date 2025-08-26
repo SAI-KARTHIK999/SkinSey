@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { Shield, Sparkles, Users, Camera, BarChart3, Calendar, MessageCircle,HeartIcon } from "lucide-react"
 import Link from "next/link"
 import { ChanseyMascot } from "@/components/chansey-mascot"
-import Link from "next/link";
 
 export default function LandingPage() {
   return (
