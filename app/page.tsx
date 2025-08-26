@@ -155,7 +155,7 @@ export default function LandingPage() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
             <ChanseyMascot size="sm" />
-            <span className="text-gray-600">© 2024 Skinsey. All rights reserved.</span>
+            <span className="text-gray-600">© 2025 Skinsey. All rights reserved.</span>
           </div>
           <div className="flex gap-6 text-sm text-gray-500">
             <Link href="#" className="hover:text-pink-600 transition-colors">
