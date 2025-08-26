@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Shield, Sparkles, Users, Camera, BarChart3, Calendar, MessageCircle,HeartIcon } from "lucide-react"
 import Link from "next/link"
 import { ChanseyMascot } from "@/components/chansey-mascot"
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -88,7 +89,10 @@ export default function LandingPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {/* Skin Dashboard */}
-          <Card className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
+          <Card 
+            as={Link}
+            href="/login"
+            className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <BarChart3 className="w-8 h-8 text-pink-600" />
@@ -103,7 +107,10 @@ export default function LandingPage() {
           </Card>
 
           {/* Skin Analyzer */}
-          <Card className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
+          <Card 
+            as={Link}
+            href="/login"
+            className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Camera className="w-8 h-8 text-pink-600" />
@@ -118,7 +125,10 @@ export default function LandingPage() {
           </Card>
 
           {/* Appointment Scheduler */}
-          <Card className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
+          <Card
+            as={Link}
+            href="/login"
+            className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-pink-600" />
@@ -133,7 +143,10 @@ export default function LandingPage() {
           </Card>
 
           {/* Expert Consultation */}
-          <Card className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
+          <Card
+            as={Link}
+            href="/login"
+            className="border-pink-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="w-8 h-8 text-pink-600" />
